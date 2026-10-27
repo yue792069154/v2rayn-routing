@@ -1,0 +1,6 @@
+__pycache__/
+*.tmp
+.env
+*.db
+guiNConfig.json
+config.json

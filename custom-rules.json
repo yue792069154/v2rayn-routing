@@ -1,0 +1,10 @@
+[
+  {
+    "Domain": [
+      "domain:novarui.com"
+    ],
+    "OutboundTag": "direct",
+    "Enabled": true,
+    "Remarks": "novarui.com 及子域名｜优先直连"
+  }
+]

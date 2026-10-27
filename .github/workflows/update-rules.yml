@@ -1,0 +1,39 @@
+name: 更新分流规则
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - custom-rules.json
+      - base-rules.json
+      - build.py
+      - .github/workflows/update-rules.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: routing-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - name: 更新上游并生成规则
+        run: python3 build.py --refresh
+      - name: 提交更新
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rules.json RULES.md
+          if git diff --cached --quiet; then
+            echo '规则没有变化'
+            exit 0
+          fi
+          git commit -m '更新分流规则与目录'
+          git push
