@@ -1,1 +1,285 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJCdWlsZCBtaWhvbW8gKyBTaGFkb3dyb2NrZXQgcHJvZHVjdHMgZnJvbSB0aGUgc2FtZSBzb3VyY2VzIGFzIGJ1aWxkLnB5LgoKSW5wdXRzIDogY3VzdG9tLXJ1bGVzLmpzb24gKyBiYXNlLXJ1bGVzLmpzb24gKGlkZW50aWNhbCBzb3VyY2Ugb2YgdHJ1dGggdG8KICAgICAgICAgdGhlIHYycmF5TiBidWlsZDsgdGhpcyBzY3JpcHQgbmV2ZXIgdG91Y2hlcyBydWxlcy5qc29uKS4KT3V0cHV0czogbWlob21vL3J1bGVzLnlhbWwsIG1paG9tby9ydWxlLXByb3ZpZGVycy55YW1sLCBtaWhvbW8vbWFuaWZlc3QuanNvbiwKICAgICAgICAgc2hhZG93cm9ja2V0L3NoYWRvd3JvY2tldC5jb25mLCBzaGFkb3dyb2NrZXQvcnVsZXMubGlzdApTYWZldHkgOiBhbnkgdXBzdHJlYW0gZG93bmxvYWQgZmFpbHVyZSwgb3IgYW55IHVwc3RyZWFtIHJ1bGUgY291bnQgZHJvcHBpbmcKICAgICAgICAgbW9yZSB0aGFuIDIwJSB2ZXJzdXMgdGhlIHByZXZpb3VzIG1hbmlmZXN0LCBhYm9ydHMgdGhlIHdob2xlIHJ1bgogICAgICAgICB3aXRob3V0IHdyaXRpbmcgYW55IHByb2R1Y3QgKGxhc3QgZ29vZCBwcm9kdWN0cyBzdGF5IGluIHBsYWNlKS4KIiIiCmltcG9ydCBqc29uLCBwYXRobGliLCBzeXMsIHVybGxpYi5yZXF1ZXN0CmZyb20gZGF0ZXRpbWUgaW1wb3J0IGRhdGV0aW1lLCB0aW1lem9uZQoKUk9PVCA9IHBhdGhsaWIuUGF0aChfX2ZpbGVfXykucmVzb2x2ZSgpLnBhcmVudAoKUE9MSUNZID0geydkaXJlY3QnOiAnRElSRUNUJywgJ3Byb3h5JzogJ1BST1hZJywgJ2Jsb2NrJzogJ1JFSkVDVCd9CgojICh1cHN0cmVhbSBmaWxlIG5hbWUsIFNvdXJjZSBmaWVsZCkgLT4gcHJvdmlkZXIgbmFtZTsgVVJMIHRha2VuIGZyb20gdGhlIGdyb3VwLgpQUk9WSURFUl9OQU1FID0gewogICAgKCdCcm9rZXIubGlzdCcsICdEb21haW4nKTogJ2Jyb2tlcicsCiAgICAoJ0Jyb2tlci5saXN0JywgJ0lwJyk6ICdicm9rZXItaXAnLAogICAgKCdwcml2YXRlLnR4dCcsICdEb21haW4nKTogJ3ByaXZhdGUnLAogICAgKCdyZWplY3QudHh0JywgJ0RvbWFpbicpOiAncmVqZWN0JywKICAgICgnZGlyZWN0LnR4dCcsICdEb21haW4nKTogJ2RpcmVjdCcsCiAgICAoJ2ljbG91ZC50eHQnLCAnRG9tYWluJyk6ICdpY2xvdWQnLAogICAgKCdhcHBsZS50eHQnLCAnRG9tYWluJyk6ICdhcHBsZScsCiAgICAoJ2dvb2dsZS50eHQnLCAnRG9tYWluJyk6ICdnb29nbGUnLAogICAgKCdnZncudHh0JywgJ0RvbWFpbicpOiAnZ2Z3JywKICAgICgndGVsZWdyYW1jaWRyLnR4dCcsICdJcCcpOiAndGVsZWdyYW1jaWRyJywKICAgICgncHJveHkudHh0JywgJ0RvbWFpbicpOiAncHJveHknLAogICAgKCdjbmNpZHIudHh0JywgJ0lwJyk6ICdjbmNpZHInLAp9CgojIG1paG9tbyBidWlsdC1pbiBnZW9pcDpwcml2YXRlIGV4cGFuc2lvbiAoMzAgZW50cmllcywgZ2F0ZXdheS12ZXJpZmllZCBvcmRlcikuClBSSVZBVEVfRVhQQU5TSU9OID0gWwogICAgJzAuMC4wLjAvOCcsICcxMC4wLjAuMC84JywgJzEwMC42NC4wLjAvMTAnLCAnMTI3LjAuMC4wLzgnLCAnMTY5LjI1NC4wLjAvMTYnLAogICAgJzE3Mi4xNi4wLjAvMTInLCAnMTkyLjAuMC4wLzI5JywgJzE5Mi4wLjAuMTcwLzMxJywgJzE5Mi4wLjIuMC8yNCcsCiAgICAnMTkyLjMxLjE5Ni4wLzI0JywgJzE5Mi41Mi4xOTMuMC8yNCcsICcxOTIuODguOTkuMC8yNCcsICcxOTIuMTY4LjAuMC8xNicsCiAgICAnMTkyLjE3NS40OC4wLzI0JywgJzE5OC4xOC4wLjAvMTUnLCAnMTk4LjUxLjEwMC4wLzI0JywgJzIwMy4wLjExMy4wLzI0JywKICAgICcyMjQuMC4wLjAvNCcsICcyNDAuMC4wLjAvNCcsICcyNTUuMjU1LjI1NS4yNTUvMzInLCAnOjovMTI4JywgJzo6MS8xMjgnLAogICAgJzY0OmZmOWI6Oi85NicsICcxMDA6Oi82NCcsICcyMDAxOjovMzInLCAnMjAwMToxMDo6LzI4JywgJzIwMDE6ZGI4OjovMzInLAogICAgJ2ZjMDA6Oi83JywgJ2ZlODA6Oi8xMCcsICdmZjAwOjovOCcsCl0KCiMgR2F0ZXdheS1vbmx5IGxpbmUsIGluc2VydGVkIGFmdGVyIHRoZSBjdXN0b20gZ3JvdXBzIChUYWlsc2NhbGUgcmFuZ2UgZ3VhcmQpLgpHVUFSRF9MSU5FID0gJ0lQLUNJRFIsMTAwLjY0LjAuMC8xMCxESVJFQ1Qsbm8tcmVzb2x2ZScKCkdFT1NJVEVfVE9fUFJPVklERVIgPSB7J3ByaXZhdGUnOiAncHJpdmF0ZScsICdnb29nbGUnOiAnZ29vZ2xlJywgJ2NuJzogJ2RpcmVjdCd9CgojIFNoYWRvd3JvY2tldCBhZGRyZXNzLWVkaXRpb246IG5vZGVzIGNvbWUgZnJvbSB0aGUgYWlycG9ydCBzdWJzY3JpcHRpb24KIyBhbHJlYWR5IGFkZGVkIGluIHRoZSBhcHA7IHRoZSBwcm94eSBncm91cHMgYmVsb3cgcmVmZXJlbmNlIHRoZQojIHN1YnNjcmlwdGlvbidzIGV4YWN0IG5vZGUgbmFtZXMgKHNhbWUgcm9zdGVyIGFzIHRoZSBnYXRld2F5IHN1YnNjcmlwdGlvbikuCiMgVXBkYXRlIHRoaXMgcm9zdGVyIHdoZW4gdGhlIHN1YnNjcmlwdGlvbidzIG5vZGUgbmFtZXMgY2hhbmdlLgpTUl9OT0RFX1JPU1RFUiA9IFsKICAgICdjbG9hZHkt5pel5pysJywgJ3BseHgt5b635Zu9JywgJ2x1c3RvbmUtSHkyJywgJ2x1c3RvbmUtVFVJQycsICfljY7kuLpTRy1IeTInLAogICAgJ+WNjuS4ulNHLVRVSUMnLCAn576O5Zu9Q0YgfCBsdXN0b25lLXdzLTQ0MycsICfmlrDliqDlnaEgfCDljY7kuLonLAogICAgJ+mmmea4r+S8mOmAiSAwMSB8IGx1c3RvbmUnLCAn5pel5pys5LyY6YCJIDAxIHwgbHVzdG9uZScsICfnvo7lm73kvJjpgIkgMDIgfCBsdXN0b25lJywKICAgICfml6XmnKzkvJjpgIkgMDMgfCBsdXN0b25lJywgJ+aXpeacrOS8mOmAiSAwNCB8IGx1c3RvbmUnLApdClNSX1VTX05PREVTID0gWwogICAgJ+e+juWbveS8mOmAiSAwMiB8IGx1c3RvbmUnLCAn576O5Zu9Q0YgfCBsdXN0b25lLXdzLTQ0MycsICfml6XmnKzkvJjpgIkgMDEgfCBsdXN0b25lJywKICAgICfml6XmnKzkvJjpgIkgMDMgfCBsdXN0b25lJywgJ+aXpeacrOS8mOmAiSAwNCB8IGx1c3RvbmUnLCAnbHVzdG9uZS1IeTInLAogICAgJ2x1c3RvbmUtVFVJQycsCl0KU1JfVEVTVF9VUkwgPSAnaHR0cDovL3d3dy5nc3RhdGljLmNvbS9nZW5lcmF0ZV8yMDQnCgoKZGVmIGxvYWQobmFtZSk6CiAgICByZXR1cm4ganNvbi5sb2FkcygoUk9PVCAvIG5hbWUpLnJlYWRfdGV4dChlbmNvZGluZz0ndXRmLTgtc2lnJykpCgoKZGVmIGdyb3VwX2xpbmVzKGdyb3VwLCBwcm92aWRlcnMpOgogICAgIiIiQ29udmVydCBvbmUgcmVwbyBydWxlIGdyb3VwIHRvIG1paG9tbyBydWxlIGxpbmVzIChnYXRld2F5IHNlbWFudGljcykuIiIiCiAgICBwb2xpY3kgPSBQT0xJQ1lbZ3JvdXBbJ091dGJvdW5kVGFnJ11dCiAgICBzb3VyY2UgPSBncm91cC5nZXQoJ1NvdXJjZScpCiAgICBpZiBzb3VyY2U6CiAgICAgICAgdXJsID0gc291cmNlWyd1cmwnXQogICAgICAgIGZuYW1lID0gdXJsLnJzdHJpcCgnLycpLnNwbGl0KCcvJylbLTFdCiAgICAgICAgbmFtZSA9IFBST1ZJREVSX05BTUVbKGZuYW1lLCBzb3VyY2VbJ2ZpZWxkJ10pXQogICAgICAgIHByb3ZpZGVycy5zZXRkZWZhdWx0KG5hbWUsIHVybCkKICAgICAgICByZXR1cm4gW2YnUlVMRS1TRVQse25hbWV9LHtwb2xpY3l9J10KICAgIGlmIGdyb3VwLmdldCgnTmV0d29yaycpID09ICd1ZHAnIGFuZCBncm91cC5nZXQoJ1BvcnQnKSA9PSAnNDQzJzoKICAgICAgICByZXR1cm4gW2YnQU5ELCgoTkVUV09SSyxVRFApLChEU1QtUE9SVCw0NDMpKSx7cG9saWN5fSddCiAgICBpZiBncm91cC5nZXQoJ1BvcnQnKSA9PSAnMC02NTUzNSc6CiAgICAgICAgcmV0dXJuIFtmJ01BVENILHtwb2xpY3l9J10KICAgIGxpbmVzID0gW10KICAgIGZvciB2YWx1ZSBpbiBncm91cC5nZXQoJ0RvbWFpbicsIFtdKToKICAgICAgICBpZiB2YWx1ZS5zdGFydHN3aXRoKCdkb21haW46Jyk6CiAgICAgICAgICAgIGxpbmVzLmFwcGVuZChmJ0RPTUFJTi1TVUZGSVgse3ZhbHVlWzc6XX0se3BvbGljeX0nKQogICAgICAgIGVsaWYgdmFsdWUuc3RhcnRzd2l0aCgnZnVsbDonKToKICAgICAgICAgICAgbGluZXMuYXBwZW5kKGYnRE9NQUlOLHt2YWx1ZVs1Ol19LHtwb2xpY3l9JykKICAgICAgICBlbGlmIHZhbHVlLnN0YXJ0c3dpdGgoJ2tleXdvcmQ6Jyk6CiAgICAgICAgICAgIGxpbmVzLmFwcGVuZChmJ0RPTUFJTi1LRVlXT1JELHt2YWx1ZVs4Ol19LHtwb2xpY3l9JykKICAgICAgICBlbGlmIHZhbHVlLnN0YXJ0c3dpdGgoJ2dlb3NpdGU6Jyk6CiAgICAgICAgICAgIGxpbmVzLmFwcGVuZChmJ0dFT1NJVEUse3ZhbHVlWzg6XX0se3BvbGljeX0nKQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoZidVbnN1cHBvcnRlZCBkb21haW4gbWF0Y2hlcjoge3ZhbHVlfScpCiAgICBmb3IgdmFsdWUgaW4gZ3JvdXAuZ2V0KCdJcCcsIFtdKToKICAgICAgICBpZiB2YWx1ZSA9PSAnZ2VvaXA6cHJpdmF0ZSc6CiAgICAgICAgICAgIGxpbmVzICs9IFtmJ0lQLUNJRFIse2NpZHJ9LHtwb2xpY3l9JyBmb3IgY2lkciBpbiBQUklWQVRFX0VYUEFOU0lPTl0KICAgICAgICBlbGlmIHZhbHVlLnN0YXJ0c3dpdGgoJ2dlb2lwOicpOgogICAgICAgICAgICBsaW5lcy5hcHBlbmQoZidHRU9JUCx7dmFsdWVbNjpdLnVwcGVyKCl9LHtwb2xpY3l9JykKICAgICAgICBlbHNlOgogICAgICAgICAgICBpZiAnLycgbm90IGluIHZhbHVlOiAgIyBiYXJlIGhvc3QgYWRkcmVzcyAtPiBob3N0IHByZWZpeCAoZ2F0ZXdheSBmb3JtKQogICAgICAgICAgICAgICAgdmFsdWUgKz0gJy8xMjgnIGlmICc6JyBpbiB2YWx1ZSBlbHNlICcvMzInCiAgICAgICAgICAgIGxpbmVzLmFwcGVuZChmJ0lQLUNJRFIse3ZhbHVlfSx7cG9saWN5fScpCiAgICByZXR1cm4gbGluZXMKCgpkZWYgYnVpbGRfcnVsZXMoKToKICAgIGN1c3RvbSwgYmFzZSA9IGxvYWQoJ2N1c3RvbS1ydWxlcy5qc29uJyksIGxvYWQoJ2Jhc2UtcnVsZXMuanNvbicpCiAgICBwcm92aWRlcnMgPSB7fQogICAgbGluZXMgPSBbXQogICAgZm9yIGcgaW4gY3VzdG9tOgogICAgICAgIGxpbmVzICs9IGdyb3VwX2xpbmVzKGcsIHByb3ZpZGVycykKICAgIGxpbmVzLmFwcGVuZChHVUFSRF9MSU5FKQogICAgZm9yIGcgaW4gYmFzZToKICAgICAgICBsaW5lcyArPSBncm91cF9saW5lcyhnLCBwcm92aWRlcnMpCiAgICByZXR1cm4gbGluZXMsIHByb3ZpZGVycwoKCmRlZiBkb3dubG9hZCh1cmwpOgogICAgcmVxID0gdXJsbGliLnJlcXVlc3QuUmVxdWVzdCh1cmwsIGhlYWRlcnM9eydVc2VyLUFnZW50JzogJ3YycmF5bi1yb3V0aW5nLXByb2R1Y3RzLzEuMCd9KQogICAgd2l0aCB1cmxsaWIucmVxdWVzdC51cmxvcGVuKHJlcSwgdGltZW91dD02MCkgYXMgcmVzcDoKICAgICAgICByZXR1cm4gcmVzcC5yZWFkKCkuZGVjb2RlKCd1dGYtOC1zaWcnKQoKCmRlZiBjb3VudF9ydWxlcyh0ZXh0KToKICAgIG4gPSAwCiAgICBmb3IgcmF3IGluIHRleHQuc3BsaXRsaW5lcygpOgogICAgICAgIGxpbmUgPSByYXcuc3RyaXAoKQogICAgICAgIGlmIGxpbmUuc3RhcnRzd2l0aCgoJ0RPTUFJTicsICdJUC1DSURSJywgJ0dFT0lQJywgJ0lQLUFTTicpKToKICAgICAgICAgICAgbiArPSAxCiAgICByZXR1cm4gbgoKCmRlZiBmZXRjaF9jb3VudHMocHJvdmlkZXJzKToKICAgIGNvdW50cyA9IHt9CiAgICBmb3IgbmFtZSwgdXJsIGluIHByb3ZpZGVycy5pdGVtcygpOgogICAgICAgIGlmIHVybCBpbiBjb3VudHMuZ2V0KCdfYnlfdXJsJywge30pOgogICAgICAgICAgICBjb3VudHNbbmFtZV0gPSBjb3VudHNbJ19ieV91cmwnXVt1cmxdCiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgYyA9IGNvdW50X3J1bGVzKGRvd25sb2FkKHVybCkpCiAgICAgICAgY291bnRzLnNldGRlZmF1bHQoJ19ieV91cmwnLCB7fSlbdXJsXSA9IGMKICAgICAgICBjb3VudHNbbmFtZV0gPSBjCiAgICBjb3VudHMucG9wKCdfYnlfdXJsJywgTm9uZSkKICAgIHJldHVybiBjb3VudHMKCgpkZWYgZ3VhcmRfY291bnRzKG5ld19jb3VudHMpOgogICAgcHJldl9maWxlID0gUk9PVCAvICdtaWhvbW8nIC8gJ21hbmlmZXN0Lmpzb24nCiAgICBpZiBub3QgcHJldl9maWxlLmV4aXN0cygpOgogICAgICAgIHJldHVybgogICAgcHJldiA9IGpzb24ubG9hZHMocHJldl9maWxlLnJlYWRfdGV4dChlbmNvZGluZz0ndXRmLTgnKSkuZ2V0KCdwcm92aWRlcnMnLCB7fSkKICAgIGZvciBuYW1lLCBvbGQgaW4gcHJldi5pdGVtcygpOgogICAgICAgIG5ldyA9IG5ld19jb3VudHMuZ2V0KG5hbWUpCiAgICAgICAgaWYgbmV3IGlzIG5vdCBOb25lIGFuZCBvbGQgYW5kIG5ldyA8IG9sZCAqIDAuODoKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcihmJ1Vwc3RyZWFtIHtuYW1lfSBjb3VudCBkcm9wcGVkIHtvbGR9IC0+IHtuZXd9ICg+MjAlKTsgYWJvcnRpbmcnKQoKCiMgU2hhZG93cm9ja2V0IGtlZXBzIGxldm9uJ3Mgb3duIFRhaWxzY2FsZSBoYW5kbGluZyAoaGlzIGN1cnJlbnQgY29uZmlnKToKIyB0aGUgMTAwLjY0LjAuMC8xMCByYW5nZSBhbmQgdHMubmV0IG5hbWVzIGdvIHRvIHRoZSBUQUlMU0NBTEUgcG9saWN5IG9mIHRoZQojIGJ1aWx0LWluIFRhaWxzY2FsZSBtb2R1bGUg4oCUIG5ldmVyIHBsYWluIERJUkVDVC4gVHdvIGxpbmVzLCBndWFyZCBwb3NpdGlvbi4KU1JfVEFJTFNDQUxFX0xJTkVTID0gWwogICAgJ0lQLUNJRFIsMTAwLjY0LjAuMC8xMCxUQUlMU0NBTEUsbm8tcmVzb2x2ZScsCiAgICAnRE9NQUlOLVNVRkZJWCx0cy5uZXQsVEFJTFNDQUxFJywKXQoKCmRlZiBzaGFkb3dyb2NrZXRfbGluZXMobWlob21vX2xpbmVzLCBwcm92aWRlcnMpOgogICAgb3V0LCBzZWVuID0gW10sIHNldCgpCiAgICBmb3IgbGluZSBpbiBtaWhvbW9fbGluZXM6CiAgICAgICAgaWYgbGluZSA9PSBHVUFSRF9MSU5FOgogICAgICAgICAgICBvdXQgKz0gU1JfVEFJTFNDQUxFX0xJTkVTCiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgaWYgbGluZSA9PSAnSVAtQ0lEUiwxMDAuNjQuMC4wLzEwLERJUkVDVCc6CiAgICAgICAgICAgICMgU2FtZSByYW5nZSBpbnNpZGUgdGhlIGdlb2lwOnByaXZhdGUgZXhwYW5zaW9uLiBVbnJlYWNoYWJsZSBpbgogICAgICAgICAgICAjIFNoYWRvd3JvY2tldCAodGhlIFRBSUxTQ0FMRSBsaW5lIGFib3ZlIG1hdGNoZXMgZmlyc3QpIGFuZCBpdAogICAgICAgICAgICAjIG11c3Qgbm90IGFwcGVhciBhcyBhIHBsYWluIERJUkVDVCBydWxlIGZvciB0aGlzIHJhbmdlLgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGlmIGxpbmUuc3RhcnRzd2l0aCgnUlVMRS1TRVQsJyk6CiAgICAgICAgICAgIF8sIG5hbWUsIHBvbGljeSA9IGxpbmUuc3BsaXQoJywnKQogICAgICAgICAgICBuZXcgPSBmJ1JVTEUtU0VULHtwcm92aWRlcnNbbmFtZV19LHtwb2xpY3l9JwogICAgICAgIGVsaWYgbGluZS5zdGFydHN3aXRoKCdHRU9TSVRFLCcpOgogICAgICAgICAgICBfLCBzaXRlLCBwb2xpY3kgPSBsaW5lLnNwbGl0KCcsJykKICAgICAgICAgICAgbmV3ID0gZidSVUxFLVNFVCx7cHJvdmlkZXJzW0dFT1NJVEVfVE9fUFJPVklERVJbc2l0ZV1dfSx7cG9saWN5fScKICAgICAgICBlbGlmIGxpbmUuc3RhcnRzd2l0aCgnR0VPSVAsJyk6CiAgICAgICAgICAgIF8sIGNvZGUsIHBvbGljeSA9IGxpbmUuc3BsaXQoJywnKQogICAgICAgICAgICBpZiBjb2RlICE9ICdDTic6CiAgICAgICAgICAgICAgICByYWlzZSBWYWx1ZUVycm9yKGYnVW5zdXBwb3J0ZWQgR0VPSVAgaW4gc2hhZG93cm9ja2V0IGJ1aWxkOiB7bGluZX0nKQogICAgICAgICAgICBuZXcgPSBmJ1JVTEUtU0VULHtwcm92aWRlcnNbImNuY2lkciJdfSx7cG9saWN5fScKICAgICAgICBlbGlmIGxpbmUuc3RhcnRzd2l0aCgnQU5ELCgoTkVUV09SSyxVRFApJyk6CiAgICAgICAgICAgIG5ldyA9IGxpbmUucmVwbGFjZSgnTkVUV09SSyxVRFAnLCAnUFJPVE9DT0wsVURQJykKICAgICAgICBlbGlmIGxpbmUuc3RhcnRzd2l0aCgnTUFUQ0gsJyk6CiAgICAgICAgICAgIG5ldyA9IGYnRklOQUwse2xpbmUuc3BsaXQoIiwiKVsxXX0nCiAgICAgICAgZWxzZToKICAgICAgICAgICAgbmV3ID0gbGluZQogICAgICAgIGlmIG5ldy5zdGFydHN3aXRoKCdSVUxFLVNFVCwnKToKICAgICAgICAgICAgaWYgbmV3IGluIHNlZW46CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBzZWVuLmFkZChuZXcpCiAgICAgICAgb3V0LmFwcGVuZChuZXcpCiAgICByZXR1cm4gb3V0CgoKZGVmIG1haW4oKToKICAgIGdlbmVyYXRlZF9hdCA9IGRhdGV0aW1lLm5vdyh0aW1lem9uZS51dGMpLnN0cmZ0aW1lKCclWS0lbS0lZFQlSDolTTolU1onKQogICAgbGluZXMsIHByb3ZpZGVycyA9IGJ1aWxkX3J1bGVzKCkKICAgIGNvdW50cyA9IGZldGNoX2NvdW50cyhwcm92aWRlcnMpICAgICAgICAgICMgcmFpc2VzIG9uIGFueSBkb3dubG9hZCBmYWlsdXJlCiAgICBndWFyZF9jb3VudHMoY291bnRzKSAgICAgICAgICAgICAgICAgICAgICAjIHJhaXNlcyBvbiA+MjAlIGRyb3AKICAgIHRvdGFsX3Byb3ZpZGVyX3J1bGVzID0gc3VtKGNvdW50cy52YWx1ZXMoKSkKCiAgICBoZWFkZXIgPSAoZicjIEdlbmVyYXRlZCBieSBidWlsZF9wcm9kdWN0cy5weSDigJQgZG8gbm90IGVkaXQgYnkgaGFuZC5cbicKICAgICAgICAgICAgICBmJyMgR2VuZXJhdGVkIGF0OiB7Z2VuZXJhdGVkX2F0fVxuJwogICAgICAgICAgICAgIGYnIyBTdGF0aWMgcnVsZXM6IHtsZW4obGluZXMpfTsgcnVsZSBwcm92aWRlcnM6IHtsZW4ocHJvdmlkZXJzKX0gJwogICAgICAgICAgICAgIGYnKHt0b3RhbF9wcm92aWRlcl9ydWxlc30gdXBzdHJlYW0gcnVsZXMpXG4nKQoKICAgIHJ1bGVzX3lhbWwgPSBoZWFkZXIgKyAncnVsZXM6XG4nICsgJycuam9pbihmJyAgLSB7anNvbi5kdW1wcyhsKX1cbicgZm9yIGwgaW4gbGluZXMpCgogICAgcHJvdl95YW1sID0gaGVhZGVyICsgJ3J1bGUtcHJvdmlkZXJzOlxuJwogICAgZm9yIG5hbWUsIHVybCBpbiBwcm92aWRlcnMuaXRlbXMoKToKICAgICAgICBwcm92X3lhbWwgKz0gKGYnICB7bmFtZX06XG4gICAgdHlwZTogaHR0cFxuICAgIGJlaGF2aW9yOiBjbGFzc2ljYWxcbicKICAgICAgICAgICAgICAgICAgICAgIGYnICAgIGZvcm1hdDogdGV4dFxuICAgIHVybDogInt1cmx9IlxuICAgIGludGVydmFsOiA4NjQwMFxuJwogICAgICAgICAgICAgICAgICAgICAgZicgICAgcGF0aDogLi9wcm92aWRlcnMve25hbWV9LnlhbWxcbicpCgogICAgc3JfbGluZXMgPSBzaGFkb3dyb2NrZXRfbGluZXMobGluZXMsIHByb3ZpZGVycykKICAgIGNvbmYgPSBoZWFkZXIucmVwbGFjZSgnIycsICcjJywgMSkKICAgIGNvbmYgKz0gKCcjIFNoYWRvd3JvY2tldCBydWxlIGNvbmZpZyAoYWRkcmVzcyBlZGl0aW9uKS4gTm9kZXMgYXJlIE5PVCBpblxuJwogICAgICAgICAgICAgJyMgdGhpcyBmaWxlOiB0aGV5IGNvbWUgZnJvbSB0aGUgYWlycG9ydCBzdWJzY3JpcHRpb24gYWxyZWFkeVxuJwogICAgICAgICAgICAgJyMgYWRkZWQgaW4gdGhlIGFwcC4gVGhlIHByb3h5IGdyb3VwcyBiZWxvdyByZWZlcmVuY2UgdGhhdFxuJwogICAgICAgICAgICAgJyMgc3Vic2NyaXB0aW9uXCdzIGV4YWN0IG5vZGUgbmFtZXMuXG4nCiAgICAgICAgICAgICAnIyBUaGUgUVVJQyBibG9jayB1c2VzIGFuIEFORC9QUk9UT0NPTCBsb2dpYyBydWxlOyBpZiB5b3VyIGFwcFxuJwogICAgICAgICAgICAgJyMgdmVyc2lvbiByZWplY3RzIGl0LCBkZWxldGUgdGhhdCBzaW5nbGUgbGluZS5cbicKICAgICAgICAgICAgICcjIFRhaWxzY2FsZTogMTAwLjY0LjAuMC8xMCBhbmQgdHMubmV0IGtlZXAgdGhlIFRBSUxTQ0FMRSBwb2xpY3lcbicKICAgICAgICAgICAgICcjIG9mIHRoZSBidWlsdC1pbiBUYWlsc2NhbGUgbW9kdWxlLCBhcyBpbiB0aGUgY3VycmVudCBjb25maWcuXG5cbicKICAgICAgICAgICAgICdbR2VuZXJhbF1cbicKICAgICAgICAgICAgICdieXBhc3Mtc3lzdGVtID0gdHJ1ZVxuJwogICAgICAgICAgICAgJ3NraXAtcHJveHkgPSAxOTIuMTY4LjAuMC8xNiwgMTAuMC4wLjAvOCwgMTcyLjE2LjAuMC8xMiwgbG9jYWxob3N0LCAqLmxvY2FsXG4nCiAgICAgICAgICAgICAnZG5zLXNlcnZlciA9IHN5c3RlbVxuXG4nCiAgICAgICAgICAgICAnW1Byb3h5XVxuJwogICAgICAgICAgICAgJyMgSW50ZW50aW9uYWxseSBlbXB0eTogbm9kZXMgY29tZSBmcm9tIHRoZSBpbi1hcHAgc3Vic2NyaXB0aW9uLlxuXG4nCiAgICAgICAgICAgICAnW1Byb3h5IEdyb3VwXVxuJwogICAgICAgICAgICAgJ1BST1hZID0gc2VsZWN0LCDnvo7lm73kvJjlhYgsIOWFqOmDqOiKgueCuSwgRElSRUNUXG4nCiAgICAgICAgICAgICAn576O5Zu95LyY5YWIID0gZmFsbGJhY2ssICcgKyAnLCAnLmpvaW4oU1JfVVNfTk9ERVMpICsKICAgICAgICAgICAgIGYnLCBpbnRlcnZhbD0xMjAsIHRpbWVvdXQ9NSwgdXJsPXtTUl9URVNUX1VSTH1cbicKICAgICAgICAgICAgICflhajpg6joioLngrkgPSB1cmwtdGVzdCwgJyArICcsICcuam9pbihTUl9OT0RFX1JPU1RFUikgKwogICAgICAgICAgICAgZicsIGludGVydmFsPTEyMCwgdGltZW91dD01LCB1cmw9e1NSX1RFU1RfVVJMfVxuXG4nCiAgICAgICAgICAgICAnW1J1bGVdXG4nICsgJ1xuJy5qb2luKHNyX2xpbmVzKSArICdcbicpCgogICAgbGlzdF9ib2R5ID0gW2wgZm9yIGwgaW4gc3JfbGluZXMgaWYgbm90IGwuc3RhcnRzd2l0aCgoJ1JVTEUtU0VULCcsICdGSU5BTCwnKSldCiAgICBydWxlc19saXN0ID0gKGhlYWRlciArICcjIFBsYWluIHJ1bGUgbGluZXMgb25seSAobm8gUlVMRS1TRVQgLyBGSU5BTCk7XG4nCiAgICAgICAgICAgICAgICAgICcjIHRoZSBRVUlDIEFORCBsaW5lIGxpdmVzIGluIHNoYWRvd3JvY2tldC5jb25mIG9ubHkuXG4nCiAgICAgICAgICAgICAgICAgICsgJ1xuJy5qb2luKGwgZm9yIGwgaW4gbGlzdF9ib2R5IGlmIG5vdCBsLnN0YXJ0c3dpdGgoJ0FORCwnKSkgKyAnXG4nKQoKICAgIG1hbmlmZXN0ID0gewogICAgICAgICdnZW5lcmF0ZWRfYXQnOiBnZW5lcmF0ZWRfYXQsCiAgICAgICAgJ3N0YXRpY19ydWxlcyc6IGxlbihsaW5lcyksCiAgICAgICAgJ3Byb3ZpZGVycyc6IGNvdW50cywKICAgICAgICAncHJvdmlkZXJfcnVsZXNfdG90YWwnOiB0b3RhbF9wcm92aWRlcl9ydWxlcywKICAgIH0KCiAgICBvdXRwdXRzID0gewogICAgICAgICdtaWhvbW8vcnVsZXMueWFtbCc6IHJ1bGVzX3lhbWwsCiAgICAgICAgJ21paG9tby9ydWxlLXByb3ZpZGVycy55YW1sJzogcHJvdl95YW1sLAogICAgICAgICdtaWhvbW8vbWFuaWZlc3QuanNvbic6IGpzb24uZHVtcHMobWFuaWZlc3QsIGVuc3VyZV9hc2NpaT1GYWxzZSwgaW5kZW50PTIpICsgJ1xuJywKICAgICAgICAnc2hhZG93cm9ja2V0L3NoYWRvd3JvY2tldC5jb25mJzogY29uZiwKICAgICAgICAnc2hhZG93cm9ja2V0L3J1bGVzLmxpc3QnOiBydWxlc19saXN0LAogICAgfQogICAgdG1wcyA9IFtdCiAgICBmb3IgcmVsLCBjb250ZW50IGluIG91dHB1dHMuaXRlbXMoKToKICAgICAgICBwYXRoID0gUk9PVCAvIHJlbAogICAgICAgIHBhdGgucGFyZW50Lm1rZGlyKHBhcmVudHM9VHJ1ZSwgZXhpc3Rfb2s9VHJ1ZSkKICAgICAgICB0bXAgPSBwYXRoLndpdGhfc3VmZml4KHBhdGguc3VmZml4ICsgJy50bXAnKQogICAgICAgIHRtcC53cml0ZV90ZXh0KGNvbnRlbnQsIGVuY29kaW5nPSd1dGYtOCcpCiAgICAgICAgdG1wcy5hcHBlbmQoKHRtcCwgcGF0aCkpCiAgICBmb3IgdG1wLCBwYXRoIGluIHRtcHM6CiAgICAgICAgdG1wLnJlcGxhY2UocGF0aCkKICAgIHByaW50KGYnQnVpbHQge2xlbihsaW5lcyl9IHN0YXRpYyBydWxlczsge2xlbihwcm92aWRlcnMpfSBwcm92aWRlcnM7ICcKICAgICAgICAgIGYne3RvdGFsX3Byb3ZpZGVyX3J1bGVzfSB1cHN0cmVhbSBydWxlczsgc2hhZG93cm9ja2V0IHtsZW4oc3JfbGluZXMpfSBsaW5lcycpCiAgICByZXR1cm4gMAoKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBzeXMuZXhpdChtYWluKCkpCg==
+#!/usr/bin/env python3
+"""Build mihomo + Shadowrocket products from the same sources as build.py.
+
+Inputs : custom-rules.json + base-rules.json (identical source of truth to
+         the v2rayN build; this script never touches rules.json).
+Outputs: mihomo/rules.yaml, mihomo/rule-providers.yaml, mihomo/manifest.json,
+         shadowrocket/shadowrocket.conf, shadowrocket/rules.list
+Safety : any upstream download failure, or any upstream rule count dropping
+         more than 20% versus the previous manifest, aborts the whole run
+         without writing any product (last good products stay in place).
+"""
+import json, pathlib, sys, urllib.request
+from datetime import datetime, timezone
+
+ROOT = pathlib.Path(__file__).resolve().parent
+
+POLICY = {'direct': 'DIRECT', 'proxy': 'PROXY', 'block': 'REJECT'}
+
+# (upstream file name, Source field) -> provider name; URL taken from the group.
+PROVIDER_NAME = {
+    ('Broker.list', 'Domain'): 'broker',
+    ('Broker.list', 'Ip'): 'broker-ip',
+    ('private.txt', 'Domain'): 'private',
+    ('reject.txt', 'Domain'): 'reject',
+    ('direct.txt', 'Domain'): 'direct',
+    ('icloud.txt', 'Domain'): 'icloud',
+    ('apple.txt', 'Domain'): 'apple',
+    ('google.txt', 'Domain'): 'google',
+    ('gfw.txt', 'Domain'): 'gfw',
+    ('telegramcidr.txt', 'Ip'): 'telegramcidr',
+    ('proxy.txt', 'Domain'): 'proxy',
+    ('cncidr.txt', 'Ip'): 'cncidr',
+}
+
+# mihomo built-in geoip:private expansion (30 entries, gateway-verified order).
+PRIVATE_EXPANSION = [
+    '0.0.0.0/8', '10.0.0.0/8', '100.64.0.0/10', '127.0.0.0/8', '169.254.0.0/16',
+    '172.16.0.0/12', '192.0.0.0/29', '192.0.0.170/31', '192.0.2.0/24',
+    '192.31.196.0/24', '192.52.193.0/24', '192.88.99.0/24', '192.168.0.0/16',
+    '192.175.48.0/24', '198.18.0.0/15', '198.51.100.0/24', '203.0.113.0/24',
+    '224.0.0.0/4', '240.0.0.0/4', '255.255.255.255/32', '::/128', '::1/128',
+    '64:ff9b::/96', '100::/64', '2001::/32', '2001:10::/28', '2001:db8::/32',
+    'fc00::/7', 'fe80::/10', 'ff00::/8',
+]
+
+# Gateway-only line, inserted after the custom groups (Tailscale range guard).
+GUARD_LINE = 'IP-CIDR,100.64.0.0/10,DIRECT,no-resolve'
+
+GEOSITE_TO_PROVIDER = {'private': 'private', 'google': 'google', 'cn': 'direct'}
+
+# Shadowrocket address-edition: nodes come from the airport subscription
+# already added in the app; the proxy groups below reference the
+# subscription's exact node names (same roster as the gateway subscription).
+# Update this roster when the subscription's node names change.
+SR_NODE_ROSTER = [
+    'cloady-日本', 'plxx-德国', 'lustone-Hy2', 'lustone-TUIC', '华为SG-Hy2',
+    '华为SG-TUIC', '美国CF | lustone-ws-443', '新加坡 | 华为',
+    '香港优选 01 | lustone', '日本优选 01 | lustone', '美国优选 02 | lustone',
+    '日本优选 03 | lustone', '日本优选 04 | lustone',
+]
+SR_US_NODES = [
+    '美国优选 02 | lustone', '美国CF | lustone-ws-443', '日本优选 01 | lustone',
+    '日本优选 03 | lustone', '日本优选 04 | lustone', 'lustone-Hy2',
+    'lustone-TUIC',
+]
+SR_TEST_URL = 'http://www.gstatic.com/generate_204'
+
+
+def load(name):
+    return json.loads((ROOT / name).read_text(encoding='utf-8-sig'))
+
+
+def group_lines(group, providers):
+    """Convert one repo rule group to mihomo rule lines (gateway semantics)."""
+    policy = POLICY[group['OutboundTag']]
+    source = group.get('Source')
+    if source:
+        url = source['url']
+        fname = url.rstrip('/').split('/')[-1]
+        name = PROVIDER_NAME[(fname, source['field'])]
+        providers.setdefault(name, url)
+        return [f'RULE-SET,{name},{policy}']
+    if group.get('Network') == 'udp' and group.get('Port') == '443':
+        return [f'AND,((NETWORK,UDP),(DST-PORT,443)),{policy}']
+    if group.get('Port') == '0-65535':
+        return [f'MATCH,{policy}']
+    lines = []
+    for value in group.get('Domain', []):
+        if value.startswith('domain:'):
+            lines.append(f'DOMAIN-SUFFIX,{value[7:]},{policy}')
+        elif value.startswith('full:'):
+            lines.append(f'DOMAIN,{value[5:]},{policy}')
+        elif value.startswith('keyword:'):
+            lines.append(f'DOMAIN-KEYWORD,{value[8:]},{policy}')
+        elif value.startswith('geosite:'):
+            lines.append(f'GEOSITE,{value[8:]},{policy}')
+        else:
+            raise ValueError(f'Unsupported domain matcher: {value}')
+    for value in group.get('Ip', []):
+        if value == 'geoip:private':
+            lines += [f'IP-CIDR,{cidr},{policy}' for cidr in PRIVATE_EXPANSION]
+        elif value.startswith('geoip:'):
+            lines.append(f'GEOIP,{value[6:].upper()},{policy}')
+        else:
+            if '/' not in value:  # bare host address -> host prefix (gateway form)
+                value += '/128' if ':' in value else '/32'
+            lines.append(f'IP-CIDR,{value},{policy}')
+    return lines
+
+
+def build_rules():
+    custom, base = load('custom-rules.json'), load('base-rules.json')
+    providers = {}
+    lines = []
+    for g in custom:
+        lines += group_lines(g, providers)
+    lines.append(GUARD_LINE)
+    for g in base:
+        lines += group_lines(g, providers)
+    return lines, providers
+
+
+def download(url):
+    req = urllib.request.Request(url, headers={'User-Agent': 'v2rayn-routing-products/1.0'})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return resp.read().decode('utf-8-sig')
+
+
+def count_rules(text):
+    n = 0
+    for raw in text.splitlines():
+        line = raw.strip()
+        if line.startswith(('DOMAIN', 'IP-CIDR', 'GEOIP', 'IP-ASN')):
+            n += 1
+    return n
+
+
+def fetch_counts(providers):
+    counts = {}
+    for name, url in providers.items():
+        if url in counts.get('_by_url', {}):
+            counts[name] = counts['_by_url'][url]
+            continue
+        c = count_rules(download(url))
+        counts.setdefault('_by_url', {})[url] = c
+        counts[name] = c
+    counts.pop('_by_url', None)
+    return counts
+
+
+def guard_counts(new_counts):
+    prev_file = ROOT / 'mihomo' / 'manifest.json'
+    if not prev_file.exists():
+        return
+    prev = json.loads(prev_file.read_text(encoding='utf-8')).get('providers', {})
+    for name, old in prev.items():
+        new = new_counts.get(name)
+        if new is not None and old and new < old * 0.8:
+            raise ValueError(f'Upstream {name} count dropped {old} -> {new} (>20%); aborting')
+
+
+# Shadowrocket keeps levon's own Tailscale handling (his current config):
+# the 100.64.0.0/10 range and ts.net names go to the TAILSCALE policy of the
+# built-in Tailscale module — never plain DIRECT. Two lines, guard position.
+SR_TAILSCALE_LINES = [
+    'IP-CIDR,100.64.0.0/10,TAILSCALE,no-resolve',
+    'DOMAIN-SUFFIX,ts.net,TAILSCALE',
+]
+
+
+def shadowrocket_lines(mihomo_lines, providers):
+    out, seen = [], set()
+    for line in mihomo_lines:
+        if line == GUARD_LINE:
+            out += SR_TAILSCALE_LINES
+            continue
+        if line == 'IP-CIDR,100.64.0.0/10,DIRECT':
+            # Same range inside the geoip:private expansion. Unreachable in
+            # Shadowrocket (the TAILSCALE line above matches first) and it
+            # must not appear as a plain DIRECT rule for this range.
+            continue
+        if line.startswith('RULE-SET,'):
+            _, name, policy = line.split(',')
+            new = f'RULE-SET,{providers[name]},{policy}'
+        elif line.startswith('GEOSITE,'):
+            _, site, policy = line.split(',')
+            new = f'RULE-SET,{providers[GEOSITE_TO_PROVIDER[site]]},{policy}'
+        elif line.startswith('GEOIP,'):
+            _, code, policy = line.split(',')
+            if code != 'CN':
+                raise ValueError(f'Unsupported GEOIP in shadowrocket build: {line}')
+            new = f'RULE-SET,{providers["cncidr"]},{policy}'
+        elif line.startswith('AND,((NETWORK,UDP)'):
+            new = line.replace('NETWORK,UDP', 'PROTOCOL,UDP')
+        elif line.startswith('MATCH,'):
+            new = f'FINAL,{line.split(",")[1]}'
+        else:
+            new = line
+        if new.startswith('RULE-SET,'):
+            if new in seen:
+                continue
+            seen.add(new)
+        out.append(new)
+    return out
+
+
+def main():
+    generated_at = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    lines, providers = build_rules()
+    counts = fetch_counts(providers)          # raises on any download failure
+    guard_counts(counts)                      # raises on >20% drop
+    total_provider_rules = sum(counts.values())
+
+    header = (f'# Generated by build_products.py — do not edit by hand.\n'
+              f'# Generated at: {generated_at}\n'
+              f'# Static rules: {len(lines)}; rule providers: {len(providers)} '
+              f'({total_provider_rules} upstream rules)\n')
+
+    rules_yaml = header + 'rules:\n' + ''.join(f'  - {json.dumps(l)}\n' for l in lines)
+
+    prov_yaml = header + 'rule-providers:\n'
+    for name, url in providers.items():
+        prov_yaml += (f'  {name}:\n    type: http\n    behavior: classical\n'
+                      f'    format: text\n    url: "{url}"\n    interval: 86400\n'
+                      f'    path: ./providers/{name}.yaml\n')
+
+    sr_lines = shadowrocket_lines(lines, providers)
+    conf = header.replace('#', '#', 1)
+    conf += ('# Shadowrocket rule config (address edition). Nodes are NOT in\n'
+             '# this file: they come from the airport subscription already\n'
+             '# added in the app. The proxy groups below reference that\n'
+             '# subscription\'s exact node names.\n'
+             '# The QUIC block uses an AND/PROTOCOL logic rule; if your app\n'
+             '# version rejects it, delete that single line.\n'
+             '# Tailscale: 100.64.0.0/10 and ts.net keep the TAILSCALE policy\n'
+             '# of the built-in Tailscale module, as in the current config.\n\n'
+             '[General]\n'
+             'bypass-system = true\n'
+             'skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local\n'
+             'dns-server = system\n\n'
+             '[Proxy]\n'
+             '# Intentionally empty: nodes come from the in-app subscription.\n\n'
+             '[Proxy Group]\n'
+             'PROXY = select, 美国优先, 全部节点, DIRECT\n'
+             '美国优先 = fallback, ' + ', '.join(SR_US_NODES) +
+             f', interval=120, timeout=5, url={SR_TEST_URL}\n'
+             '全部节点 = url-test, ' + ', '.join(SR_NODE_ROSTER) +
+             f', interval=120, timeout=5, url={SR_TEST_URL}\n\n'
+             '[Rule]\n' + '\n'.join(sr_lines) + '\n')
+
+    list_body = [l for l in sr_lines if not l.startswith(('RULE-SET,', 'FINAL,'))]
+    rules_list = (header + '# Plain rule lines only (no RULE-SET / FINAL);\n'
+                  '# the QUIC AND line lives in shadowrocket.conf only.\n'
+                  + '\n'.join(l for l in list_body if not l.startswith('AND,')) + '\n')
+
+    manifest = {
+        'generated_at': generated_at,
+        'static_rules': len(lines),
+        'providers': counts,
+        'provider_rules_total': total_provider_rules,
+    }
+
+    outputs = {
+        'mihomo/rules.yaml': rules_yaml,
+        'mihomo/rule-providers.yaml': prov_yaml,
+        'mihomo/manifest.json': json.dumps(manifest, ensure_ascii=False, indent=2) + '\n',
+        'shadowrocket/shadowrocket.conf': conf,
+        'shadowrocket/rules.list': rules_list,
+    }
+    tmps = []
+    for rel, content in outputs.items():
+        path = ROOT / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(path.suffix + '.tmp')
+        tmp.write_text(content, encoding='utf-8')
+        tmps.append((tmp, path))
+    for tmp, path in tmps:
+        tmp.replace(path)
+    print(f'Built {len(lines)} static rules; {len(providers)} providers; '
+          f'{total_provider_rules} upstream rules; shadowrocket {len(sr_lines)} lines')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
