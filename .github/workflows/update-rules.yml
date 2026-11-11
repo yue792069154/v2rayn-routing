@@ -2,12 +2,15 @@ name: 更新分流规则
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 20 * * *'
   push:
     branches: [main]
     paths:
       - custom-rules.json
       - base-rules.json
       - build.py
+      - build_products.py
       - .github/workflows/update-rules.yml
 
 permissions:
@@ -25,12 +28,14 @@ jobs:
       - uses: actions/checkout@v7
       - name: 更新上游并生成规则
         run: python3 build.py --refresh
+      - name: 生成 mihomo 与小火箭成品
+        run: python3 build_products.py
       - name: 提交更新
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add rules.json RULES.md
+          git add rules.json RULES.md mihomo shadowrocket
           if git diff --cached --quiet; then
             echo '规则没有变化'
             exit 0
