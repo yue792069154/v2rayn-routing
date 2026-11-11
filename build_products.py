@@ -80,11 +80,12 @@ def group_lines(group, providers):
         name = PROVIDER_NAME[(fname, source['field'])]
         providers.setdefault(name, url)
         return [f'RULE-SET,{name},{policy}']
-    if group.get('Network') == 'udp' and group.get('Port') == '443':
-        return [f'AND,((NETWORK,UDP),(DST-PORT,443)),{policy}']
     if group.get('Port') == '0-65535':
         return [f'MATCH,{policy}']
     lines = []
+    if group.get('Network') == 'udp' and group.get('Port'):
+        for port in str(group['Port']).split(','):
+            lines.append(f'AND,((NETWORK,UDP),(DST-PORT,{port.strip()})),{policy}')
     for value in group.get('Domain', []):
         if value.startswith('domain:'):
             lines.append(f'DOMAIN-SUFFIX,{value[7:]},{policy}')
