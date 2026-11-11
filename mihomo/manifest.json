@@ -1,1 +1,19 @@
-ewogICJnZW5lcmF0ZWRfYXQiOiAiMjAyNi0xMS0xMVQwODo0NDo1NVoiLAogICJzdGF0aWNfcnVsZXMiOiAxOTgzLAogICJwcm92aWRlcnMiOiB7CiAgICAiYnJva2VyIjogMTUxLAogICAgImJyb2tlci1pcCI6IDE1MSwKICAgICJwcml2YXRlIjogMTMyLAogICAgInJlamVjdCI6IDE5NzU5NiwKICAgICJkaXJlY3QiOiAxMTAxODksCiAgICAiaWNsb3VkIjogNTIsCiAgICAiYXBwbGUiOiAxNjUsCiAgICAiZ29vZ2xlIjogMTEyLAogICAgImdmdyI6IDQ0NTIsCiAgICAidGVsZWdyYW1jaWRyIjogMTIsCiAgICAicHJveHkiOiAyNzM1MSwKICAgICJjbmNpZHIiOiA5NjQ3CiAgfSwKICAicHJvdmlkZXJfcnVsZXNfdG90YWwiOiAzNTAwMTAKfQo=
+{
+  "generated_at": "2026-11-11T08:44:55Z",
+  "static_rules": 1983,
+  "providers": {
+    "broker": 151,
+    "broker-ip": 151,
+    "private": 132,
+    "reject": 197596,
+    "direct": 110189,
+    "icloud": 52,
+    "apple": 165,
+    "google": 112,
+    "gfw": 4452,
+    "telegramcidr": 12,
+    "proxy": 27351,
+    "cncidr": 9647
+  },
+  "provider_rules_total": 350010
+}
