@@ -1,10 +1,1 @@
-[
-  {
-    "Domain": [
-      "domain:novarui.com"
-    ],
-    "OutboundTag": "direct",
-    "Enabled": true,
-    "Remarks": "novarui.com 及子域名｜优先直连"
-  }
-]
+WwogIHsKICAgICJEb21haW4iOiBbCiAgICAgICJkb21haW46bm92YXJ1aS5jb20iCiAgICBdLAogICAgIk91dGJvdW5kVGFnIjogImRpcmVjdCIsCiAgICAiRW5hYmxlZCI6IHRydWUsCiAgICAiUmVtYXJrcyI6ICJub3ZhcnVpLmNvbSDlj4rlrZDln5/lkI3vvZzkvJjlhYjnm7Tov54iCiAgfSwKICB7CiAgICAiRG9tYWluIjogWwogICAgICAiZG9tYWluOnRhaWxzY2FsZS5jb20iCiAgICBdLAogICAgIk91dGJvdW5kVGFnIjogImRpcmVjdCIsCiAgICAiRW5hYmxlZCI6IHRydWUsCiAgICAiUmVtYXJrcyI6ICJUYWlsc2NhbGUg5o6n5Yi26Z2i5LiOIERFUlAg5Z+f5ZCN772c55u06L+e77yI6Ziy572R5YWz56uv54K55rGh5p+T77yJIgogIH0sCiAgewogICAgIk5ldHdvcmsiOiAidWRwIiwKICAgICJQb3J0IjogIjQxNjQxLDM0NzgiLAogICAgIk91dGJvdW5kVGFnIjogImRpcmVjdCIsCiAgICAiRW5hYmxlZCI6IHRydWUsCiAgICAiUmVtYXJrcyI6ICJUYWlsc2NhbGUgV2lyZUd1YXJkKDQxNjQxKSDkuI4gU1RVTigzNDc4KSDnq6/lj6PvvZznm7Tov54iCiAgfQpdCg==
