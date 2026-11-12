@@ -1,6 +1,15 @@
 [
   {
     "Domain": [
+      "domain:yundou.ai",
+      "domain:xixiapi.io"
+    ],
+    "OutboundTag": "direct",
+    "Enabled": true,
+    "Remarks": "yundou.ai、xixiapi.io｜直连（levon 2026-11-12 指令，压过代理名单命中）"
+  },
+  {
+    "Domain": [
       "domain:novarui.com"
     ],
     "OutboundTag": "direct",
