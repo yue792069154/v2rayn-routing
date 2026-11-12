@@ -1,12 +1,11 @@
 [
   {
     "Domain": [
-      "domain:yundou.ai",
-      "domain:xixiapi.io"
+      "domain:yundou.ai"
     ],
     "OutboundTag": "direct",
     "Enabled": true,
-    "Remarks": "yundou.ai、xixiapi.io｜直连（levon 2026-11-12 指令，压过代理名单命中）"
+    "Remarks": "yundou.ai｜直连（levon 2026-11-12 指令；xixiapi.io 经其同日改口保持走代理、不加规则）"
   },
   {
     "Domain": [
@@ -67,7 +66,8 @@
       "domain:cursor.sh",
       "domain:cursor.com",
       "domain:cursor-cdn.com",
-      "domain:anysphere.inc"
+      "domain:anysphere.inc",
+      "domain:xixiapi.io"
     ]
   },
   {

@@ -4,14 +4,14 @@
 
 | 顺序 | 别名 | 出口 | 匹配项数 |
 | --- | --- | --- | --- |
-| 1 | yundou.ai、xixiapi.io｜直连（levon 2026-11-12 指令，压过代理名单命中） | direct | 2 |
+| 1 | yundou.ai｜直连（levon 2026-11-12 指令；xixiapi.io 经其同日改口保持走代理、不加规则） | direct | 1 |
 | 2 | novarui.com 及子域名｜优先直连 | direct | 1 |
 | 3 | Tailscale 控制面与 DERP 域名｜直连（防网关端点污染） | direct | 1 |
 | 4 | Tailscale WireGuard(41641) 与 STUN(3478) 端口｜直连 | direct | 按端口/协议 |
 | 5 | HTTP/3 与 QUIC（UDP 443）｜拦截 | block | 按端口/协议 |
 | 6 | 自定义固定入口地址｜直连 | direct | 2 |
 | 7 | LUAPI 指定入口｜直连 | direct | 5 |
-| 8 | Cursor 与 XixiAPI｜代理 | proxy | 4 |
+| 8 | Cursor 与 XixiAPI｜代理 | proxy | 5 |
 | 9 | LUAPI 指定服务｜直连 | direct | 6 |
 | 10 | LUAPI 与长桥券商｜代理 | proxy | 10 |
 | 11 | trade.skytigris.cn｜交易接口代理 | proxy | 1 |
