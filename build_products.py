@@ -208,28 +208,9 @@ def guard_counts(new_counts):
 # Shadowrocket keeps levon's own Tailscale handling (his current config):
 # the 100.64.0.0/10 range and ts.net names go to the TAILSCALE policy of the
 # built-in Tailscale module — never plain DIRECT. Two lines, guard position.
-# NOTE: the 100.64.0.0/10 line deliberately has NO no-resolve. With
-# no-resolve, a by-domain connection never matches it and falls
-# through to PROXY (verified 2026-11-17: levon.loc.cc with a [Host]
-# mapping still produced zero requests at the gateway). Without it,
-# the resolver answers levon.loc.cc from the [Host] mapping below
-# and the connection matches this line by IP, like a by-IP dial.
 SR_TAILSCALE_LINES = [
-    'IP-CIDR,100.64.0.0/10,TAILSCALE',
+    'IP-CIDR,100.64.0.0/10,TAILSCALE,no-resolve',
     'DOMAIN-SUFFIX,ts.net,TAILSCALE',
-]
-
-# levon's gateway domain, Shadowrocket only. Deliberately NO DOMAIN
-# rule for it: a DOMAIN match hands the hostname to the Tailscale
-# module, which dials IP addresses only, and the connection died
-# before sending a single packet (verified 2026-11-17: the request
-# log showed the DOMAIN rule matched; the gateway saw zero requests).
-# Instead, this local host mapping makes name resolution return the
-# gateway's Tailscale address, so the connection is dialed by IP and
-# takes the IP-CIDR TAILSCALE line above, exactly like a by-IP
-# connection (verified working).
-SR_HOST_LINES = [
-    'levon.loc.cc = 100.121.165.43',
 ]
 
 
@@ -313,8 +294,7 @@ def main():
              f', interval=120, timeout=5, url={SR_TEST_URL}\n'
              '全部节点 = url-test, ' + ', '.join(roster_all) +
              f', interval=120, timeout=5, url={SR_TEST_URL}\n\n'
-             '[Rule]\n' + '\n'.join(sr_lines) + '\n\n'
-             '[Host]\n' + '\n'.join(SR_HOST_LINES) + '\n')
+             '[Rule]\n' + '\n'.join(sr_lines) + '\n')
 
     list_body = [l for l in sr_lines if not l.startswith(('RULE-SET,', 'FINAL,'))]
     rules_list = (header + '# Plain rule lines only (no RULE-SET / FINAL);\n'
