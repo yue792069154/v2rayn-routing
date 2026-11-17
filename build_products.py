@@ -56,7 +56,7 @@ GEOSITE_TO_PROVIDER = {'private': 'private', 'google': 'google', 'cn': 'direct'}
 # (2026-11-12): no node names are baked into this script any more, so a
 # subscription rename cannot silently break the groups.
 ROSTER_FILE = 'node-roster.json'
-ROSTER_MAX_AGE_HOURS = 48
+ROSTER_MAX_AGE_HOURS = 192
 SR_TEST_URL = 'http://www.gstatic.com/generate_204'
 
 
@@ -213,9 +213,18 @@ SR_TAILSCALE_LINES = [
     'DOMAIN-SUFFIX,ts.net,TAILSCALE',
 ]
 
+# levon's gateway domain resolves to the gateway's own Tailscale address.
+# The IP-CIDR TAILSCALE line above carries no-resolve, so a by-domain
+# connection from the phone can miss it and fall through to PROXY, whose
+# nodes cannot reach a tailnet address. Pin the domain itself to TAILSCALE,
+# first in [Rule]. Shadowrocket only; other consumers are unaffected.
+SR_DOMAIN_LINES = [
+    'DOMAIN,levon.loc.cc,TAILSCALE',
+]
+
 
 def shadowrocket_lines(mihomo_lines, providers):
-    out, seen = [], set()
+    out, seen = list(SR_DOMAIN_LINES), set()
     for line in mihomo_lines:
         if line == GUARD_LINE:
             out += SR_TAILSCALE_LINES
