@@ -222,6 +222,15 @@ SR_DOMAIN_LINES = [
     'DOMAIN,levon.loc.cc,TAILSCALE',
 ]
 
+# The Tailscale module dials IP addresses only: a by-domain connection
+# matched to TAILSCALE died before sending a single packet (verified
+# 2026-11-17: the rule matched, the gateway saw zero requests). Pin the
+# gateway domain to its Tailscale address with a local host mapping so
+# the module always gets a concrete IP. Shadowrocket only.
+SR_HOST_LINES = [
+    'levon.loc.cc = 100.121.165.43',
+]
+
 
 def shadowrocket_lines(mihomo_lines, providers):
     out, seen = list(SR_DOMAIN_LINES), set()
@@ -303,7 +312,8 @@ def main():
              f', interval=120, timeout=5, url={SR_TEST_URL}\n'
              '全部节点 = url-test, ' + ', '.join(roster_all) +
              f', interval=120, timeout=5, url={SR_TEST_URL}\n\n'
-             '[Rule]\n' + '\n'.join(sr_lines) + '\n')
+             '[Rule]\n' + '\n'.join(sr_lines) + '\n\n'
+             '[Host]\n' + '\n'.join(SR_HOST_LINES) + '\n')
 
     list_body = [l for l in sr_lines if not l.startswith(('RULE-SET,', 'FINAL,'))]
     rules_list = (header + '# Plain rule lines only (no RULE-SET / FINAL);\n'
