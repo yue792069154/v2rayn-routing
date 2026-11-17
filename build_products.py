@@ -208,8 +208,14 @@ def guard_counts(new_counts):
 # Shadowrocket keeps levon's own Tailscale handling (his current config):
 # the 100.64.0.0/10 range and ts.net names go to the TAILSCALE policy of the
 # built-in Tailscale module — never plain DIRECT. Two lines, guard position.
+# NOTE: the 100.64.0.0/10 line deliberately has NO no-resolve. With
+# no-resolve, a by-domain connection never matches it and falls
+# through to PROXY (verified 2026-11-17: levon.loc.cc with a [Host]
+# mapping still produced zero requests at the gateway). Without it,
+# the resolver answers levon.loc.cc from the [Host] mapping below
+# and the connection matches this line by IP, like a by-IP dial.
 SR_TAILSCALE_LINES = [
-    'IP-CIDR,100.64.0.0/10,TAILSCALE,no-resolve',
+    'IP-CIDR,100.64.0.0/10,TAILSCALE',
     'DOMAIN-SUFFIX,ts.net,TAILSCALE',
 ]
 
