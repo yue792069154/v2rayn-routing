@@ -219,36 +219,22 @@ SR_TAILSCALE_LINES = [
     'DOMAIN-SUFFIX,ts.net,TAILSCALE',
 ]
 
-# levon's gateway domain, Shadowrocket only. NEVER point a DOMAIN
-# rule at TAILSCALE for it: the Tailscale module receives the
-# hostname and the connection dies before sending a single packet
-# (verified 2026-11-17 three ways: DOMAIN->TAILSCALE rule matched,
-# gateway saw zero requests; even after the IP-CIDR line matched by
-# resolved IP, the module still got the hostname and nothing
-# arrived). The domain is served two other ways: the first [Rule]
-# line sends it to the gateway's own mihomo (SR_FIRST_LINES /
-# SR_HOME_PROXY), and this local host mapping makes name resolution
-# return the gateway's Tailscale address for anything else.
+# levon's gateway domain, Shadowrocket only. Deliberately NO DOMAIN
+# rule for it: a DOMAIN match hands the hostname to the Tailscale
+# module, which dials IP addresses only, and the connection died
+# before sending a single packet (verified 2026-11-17: the request
+# log showed the DOMAIN rule matched; the gateway saw zero requests).
+# Instead, this local host mapping makes name resolution return the
+# gateway's Tailscale address, so the connection is dialed by IP and
+# takes the IP-CIDR TAILSCALE line above, exactly like a by-IP
+# connection (verified working).
 SR_HOST_LINES = [
     'levon.loc.cc = 100.121.165.43',
 ]
 
-# First [Rule] line for the gateway domain: send it to the gateway's
-# own mihomo through its Tailscale address (see SR_HOME_PROXY below).
-SR_FIRST_LINES = [
-    'DOMAIN,levon.loc.cc,HomeGW',
-]
-
-# One built-in proxy entry: the home gateway's mihomo mixed port,
-# addressed by its Tailscale IP (IP dials are the one thing every
-# hop in this chain provably does well). mihomo receives the domain,
-# resolves it, and connects locally. Verified end-to-end from a
-# tailnet peer 2026-11-17: HTTP 200 in 0.04s.
-SR_HOME_PROXY = 'HomeGW = http, 100.121.165.43, 7890'
-
 
 def shadowrocket_lines(mihomo_lines, providers):
-    out, seen = list(SR_FIRST_LINES), set()
+    out, seen = [], set()
     for line in mihomo_lines:
         if line == GUARD_LINE:
             out += SR_TAILSCALE_LINES
@@ -320,9 +306,7 @@ def main():
              'skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local\n'
              'dns-server = system\n\n'
              '[Proxy]\n'
-             '# Nodes come from the in-app subscription; the single entry\n'
-             '# below is levon\'s own home gateway (see SR_HOME_PROXY).\n'
-             + SR_HOME_PROXY + '\n\n'
+             '# Intentionally empty: nodes come from the in-app subscription.\n\n'
              '[Proxy Group]\n'
              'PROXY = select, 美国优先, 全部节点, DIRECT\n'
              '美国优先 = fallback, ' + ', '.join(us_ordered) +
