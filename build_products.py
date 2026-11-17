@@ -213,27 +213,22 @@ SR_TAILSCALE_LINES = [
     'DOMAIN-SUFFIX,ts.net,TAILSCALE',
 ]
 
-# levon's gateway domain resolves to the gateway's own Tailscale address.
-# The IP-CIDR TAILSCALE line above carries no-resolve, so a by-domain
-# connection from the phone can miss it and fall through to PROXY, whose
-# nodes cannot reach a tailnet address. Pin the domain itself to TAILSCALE,
-# first in [Rule]. Shadowrocket only; other consumers are unaffected.
-SR_DOMAIN_LINES = [
-    'DOMAIN,levon.loc.cc,TAILSCALE',
-]
-
-# The Tailscale module dials IP addresses only: a by-domain connection
-# matched to TAILSCALE died before sending a single packet (verified
-# 2026-11-17: the rule matched, the gateway saw zero requests). Pin the
-# gateway domain to its Tailscale address with a local host mapping so
-# the module always gets a concrete IP. Shadowrocket only.
+# levon's gateway domain, Shadowrocket only. Deliberately NO DOMAIN
+# rule for it: a DOMAIN match hands the hostname to the Tailscale
+# module, which dials IP addresses only, and the connection died
+# before sending a single packet (verified 2026-11-17: the request
+# log showed the DOMAIN rule matched; the gateway saw zero requests).
+# Instead, this local host mapping makes name resolution return the
+# gateway's Tailscale address, so the connection is dialed by IP and
+# takes the IP-CIDR TAILSCALE line above, exactly like a by-IP
+# connection (verified working).
 SR_HOST_LINES = [
     'levon.loc.cc = 100.121.165.43',
 ]
 
 
 def shadowrocket_lines(mihomo_lines, providers):
-    out, seen = list(SR_DOMAIN_LINES), set()
+    out, seen = [], set()
     for line in mihomo_lines:
         if line == GUARD_LINE:
             out += SR_TAILSCALE_LINES
