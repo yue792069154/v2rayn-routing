@@ -65,10 +65,15 @@ def build(refresh=False):
             raise ValueError('Every group needs a descriptive Remarks')
         if r['Remarks'] in names:
             raise ValueError('Duplicate alias: '+r['Remarks'])
-        if r.get('OutboundTag') not in ('direct','proxy','block'):
+        if r.get('OutboundTag') not in ('direct','proxy','block','residential'):
             raise ValueError('Unknown outbound tag')
         if r.get('Enabled') is not True:
             raise ValueError('Disable a rule by removing it from the source file')
+        if r.get('OutboundTag')=='residential':
+            # 住宅分流只在 mihomo / Shadowrocket 成品里表达（住宅IP 组）：
+            # v2rayN 客户端没有现成的住宅出口 outbound，纯规则表达不了，
+            # 跳过本组、保持 v2rayN 既有行为不变（2026-11-19 levon 定版）。
+            names.add(r['Remarks']);continue
         if not any(k in r for k in ('Domain','Ip','Port','Network','Protocol','InboundTag')):
             raise ValueError('Group has no matcher: '+r['Remarks'])
         if any(not isinstance(r[k],list) for k in ('Domain','Ip') if k in r):
