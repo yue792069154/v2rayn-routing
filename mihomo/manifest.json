@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-21T01:41:38Z",
+  "generated_at": "2026-11-22T00:36:34Z",
   "static_rules": 2033,
   "providers": {
     "broker": 151,
     "broker-ip": 151,
     "private": 132,
-    "reject": 201108,
+    "reject": 201160,
     "direct": 110250,
     "icloud": 52,
     "apple": 165,
     "google": 112,
     "gfw": 4481,
     "telegramcidr": 12,
-    "proxy": 27248,
+    "proxy": 27271,
     "cncidr": 9665
   },
-  "provider_rules_total": 353527
+  "provider_rules_total": 353602
 }
