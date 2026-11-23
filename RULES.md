@@ -55,7 +55,7 @@
 | 49 | 国内 DNS 地址｜直连 | direct | 35 |
 | 50 | 国内 DNS 服务域名｜直连 | direct | 4 |
 | 51 | 路由器与局域网设备域名｜直连 | direct | 132 |
-| 52 | 广告与追踪域名｜拦截 | block | 201154 |
+| 52 | 广告与追踪域名｜拦截 | block | 201550 |
 | 53 | Google 服务（Geosite google）｜代理 | proxy | 1 |
 | 54 | 国内与常用直连域名｜直连 | direct | 109790 |
 | 55 | Apple iCloud 服务｜直连 | direct | 47 |
