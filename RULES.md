@@ -55,7 +55,7 @@
 | 49 | 国内 DNS 地址｜直连 | direct | 35 |
 | 50 | 国内 DNS 服务域名｜直连 | direct | 4 |
 | 51 | 路由器与局域网设备域名｜直连 | direct | 132 |
-| 52 | 广告与追踪域名｜拦截 | block | 201550 |
+| 52 | 广告与追踪域名｜拦截 | block | 203227 |
 | 53 | Google 服务（Geosite google）｜代理 | proxy | 1 |
 | 54 | 国内与常用直连域名｜直连 | direct | 109790 |
 | 55 | Apple iCloud 服务｜直连 | direct | 47 |
@@ -63,7 +63,7 @@
 | 57 | Google 补充域名｜代理 | proxy | 81 |
 | 58 | GFW 列表域名｜代理 | proxy | 4257 |
 | 59 | Telegram 补充服务器网段｜代理 | proxy | 9 |
-| 60 | 海外服务域名｜代理 | proxy | 22521 |
+| 60 | 海外服务域名｜代理 | proxy | 22522 |
 | 61 | 中国 IPv4 / IPv6 网段｜直连 | direct | 9662 |
 | 62 | 中国 IP（GeoIP cn）｜直连 | direct | 1 |
 | 63 | 中国域名（Geosite cn）｜直连 | direct | 1 |
